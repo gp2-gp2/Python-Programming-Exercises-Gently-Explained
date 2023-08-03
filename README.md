@@ -1,3 +1,3 @@
 # Python-Programming-Exercises-Gently-Explained
 
-Simple repo for keeping track of the exersises
+Simple repo for keeping track of the exercises
