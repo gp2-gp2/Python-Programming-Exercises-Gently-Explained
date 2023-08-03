@@ -1,9 +1,11 @@
 def convertToFahrenheit(degressCelsius):
-    pass
+    fahrenheit = degressCelsius * (9 / 5) + 32
+    return fahrenheit
 
 
 def convertToCelsius(degreesFahrenheit):
-    pass
+    celsius = (degreesFahrenheit - 32) * (5 / 9)
+    return celsius
 
 
 assert convertToCelsius(0) == -17.77777777777778
