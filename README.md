@@ -163,7 +163,23 @@ Your solution is correct if calling printASCIITable() displays output that looks
 126 ~
 ```
 
-Note that the character for ASCII value 32 is the space character, which is why it looks like 
-nothing is next to 32 in the output.
+Note that the character for ASCII value 32 is the space character, which is why it looks like nothing is next to 32 in the output.
 
 Prerequisite concepts: for loops, range() with two arguments, chr().
+
+## Ex 8 "Read Write File"
+
+Exercise Description
+
+You will write three functions for this exercise. First, write a writeToFile() function with two parameters for the filename of the file and the text to write into the file. Second, write an appendToFile() function, which is identical to writeToFile() except that the file opens in append mode instead of write mode. Finally, write a readFromFile() function with one parameter for the filename to open. This function returns the full text contents of the file as a string.
+These Python instructions should generate the file and the assert statement checks that the content is correct:
+
+```python
+writeToFile('greet.txt', 'Hello!\n')
+appendToFile('greet.txt', 'Goodbye!\n')
+assert readFromFile('greet.txt') == 'Hello!\nGoodbye!\n'
+```
+
+This code writes the text 'Hello!\n' and 'Goodbye!\n' to a file named greet.txt, then reads in this file’s content to verify it is correct. You can delete the greet.txt file after running these instructions program.
+
+Prerequisite concepts: text file reading and writing.
