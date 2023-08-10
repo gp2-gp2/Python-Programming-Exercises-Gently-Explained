@@ -183,3 +183,24 @@ assert readFromFile('greet.txt') == 'Hello!\nGoodbye!\n'
 This code writes the text 'Hello!\n' and 'Goodbye!\n' to a file named greet.txt, then reads in this file’s content to verify it is correct. You can delete the greet.txt file after running these instructions program.
 
 Prerequisite concepts: text file reading and writing.
+
+## Ex 9 "Chess Square Color"
+
+Exercise Description
+
+A chess board has a checker-pattern of white and black tiles. In this program, you’ll determine a pattern to the color of the squares based on their column and row. This program challenges you to take a real-world object such as a chess board, determine the patterns behind its design, and translate that into Python code.
+
+Write a getChessSquareColor() function that has parameters column and row. The function either returns 'black' or 'white' depending on the color at the specified column and row. Chess boards are 8 x 8 spaces in size, and the columns and rows in this program begin at 0 and end at 7 like in Figure 9-1. If the arguments for column or row are outside the 0 to 7 range, the function returns a blank string.
+
+Top left corner is white and has (0, 0) coordinates .
+
+These Python assert statements stop the program if their condition is False. Copy them to the bottom of your solution program. Your solution is correct if the following assert statements’ conditions are all True:
+
+```python
+assert getChessSquareColor(1, 1) == "white"
+assert getChessSquareColor(2, 1) == "black"
+assert getChessSquareColor(1, 2) == "black"
+assert getChessSquareColor(8, 8) == "white"
+assert getChessSquareColor(0, 8) == ""
+assert getChessSquareColor(2, 9) == ""
+```
